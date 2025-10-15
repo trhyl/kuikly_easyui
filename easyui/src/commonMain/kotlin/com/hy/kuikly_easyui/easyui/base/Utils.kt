@@ -1,4 +1,4 @@
-package com.hy.kuikly_easyui.base
+package com.hy.kuikly_easyui.easyui.base
 
 import com.tencent.kuikly.core.base.BaseObject
 import com.tencent.kuikly.core.manager.BridgeManager

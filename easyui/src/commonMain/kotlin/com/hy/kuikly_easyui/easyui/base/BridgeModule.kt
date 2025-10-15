@@ -1,4 +1,4 @@
-package com.hy.kuikly_easyui.base
+package com.hy.kuikly_easyui.easyui.base
 
 import com.tencent.kuikly.core.base.toInt
 import com.tencent.kuikly.core.module.CallbackFn
@@ -349,6 +349,28 @@ internal class BridgeModule : Module() {
             callbackFn,
             true
         ).toString()
+    }
+
+    /**
+     * 设置状态栏的颜色
+     * @param light 高亮模式，则显示黑色字体，反之白色字体
+     */
+    fun statusBar(light: Boolean) {
+        val methodArgs = JSONObject()
+        methodArgs.put("light", light)
+        callNativeMethod("statusBar", methodArgs, null)
+    }
+
+    /**
+     * 获取系统明暗模式
+     * -1：系统未设置
+     * 0：暗黑模式
+     * 1：明亮模式
+     */
+    fun getThemeMode(callback: (rt: Int) -> Unit) {
+        callNativeMethod("getThemeMode", JSONObject()) { data ->
+            callback(data?.optInt("result") ?: -1)
+        }
     }
 
     companion object {
