@@ -16,6 +16,8 @@ import com.hy.kuikly_easyui.easyui.EuRefresher
 import com.hy.kuikly_easyui.easyui.EuScaffold
 import com.hy.kuikly_easyui.easyui.EuScaffoldViewAttr
 import com.hy.kuikly_easyui.easyui.IEuNavAction
+import com.hy.kuikly_easyui.easyui.base.bridgeModule
+import com.hy.kuikly_easyui.easyui.curEuPage
 import com.hy.kuikly_easyui.easyui.theme.ThemeManager
 import com.hy.kuikly_easyui.easyui.theme.ThemeScheme
 import com.tencent.kuikly.core.annotations.Page
@@ -67,6 +69,11 @@ internal class TestPage : EuBasePager() {
         return {
             EuScaffold {
                 attr {
+                    getScaffoldRef = {
+                        curEuPage.bridgeModule.getThemeMode {
+                            ThemeManager.receiveSystemMode(it)
+                        }
+                    }
                     getScaffold = {
                         ctx.scaffold = it
                         ctx.operRef?.view?.attr { scaffold = it }
