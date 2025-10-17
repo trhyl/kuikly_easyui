@@ -1,6 +1,13 @@
 # Kuikly EasyUI 组件库
 
+
+
 [example](./example.mp4)
+```html
+<video controls width="100%">
+  <source src="./example.mp4" type="video/mp4">
+</video>
+```
 
 ## 📚 基础组件
 
