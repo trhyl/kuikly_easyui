@@ -1,6 +1,6 @@
 # Kuikly EasyUI 组件库
 
-[example](./example.jpg)
+![example](./example.jpg)
 
 ## 📚 基础组件
 
