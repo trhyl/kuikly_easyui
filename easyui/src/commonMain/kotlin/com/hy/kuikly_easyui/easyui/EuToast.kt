@@ -15,7 +15,6 @@ import com.tencent.kuikly.core.views.Image
 import com.tencent.kuikly.core.views.Text
 
 internal class EuToastView : EuComposeView<EuToastViewAttr, EuToastViewEvent>() {
-
     private var loading by observable(false)
 
     override fun createEvent(): EuToastViewEvent {

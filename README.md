@@ -1,5 +1,7 @@
 # Kuikly EasyUI 组件库
 
+[example](./example.mp4)
+
 ## 📚 基础组件
 
 ### 1. EuBasePager - 基础页面
