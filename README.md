@@ -1,13 +1,6 @@
 # Kuikly EasyUI 组件库
 
-[example](./example.mp4)
-
-```html
-<video controls width="100%" preload="metadata" poster="preview.jpg">
-  <source src="./example.mp4" type="video/mp4">
-  <p>您的浏览器不支持HTML5视频。请<a href="./example.mp4">下载此视频</a>观看。</p>
-</video>
-```
+[example](./example.jpg)
 
 ## 📚 基础组件
 
